@@ -13,6 +13,8 @@ alias startlxdm='sudo systemctl start lxdm.service'
 alias open='xdg-open'
 alias ee16a='ee16a-oz@cory.eecs.berkeley.edu'
 alias ipynb='pathadd "$HOME/anaconda3/bin" && ipython notebook'
+alias sql='sqlite3'
+alias pdfjoin='pdfjoin --rotateoversize false'
 
 PS1='[\u@\h \W]\$ '
 # Prepend to path without duplicates
