@@ -18,13 +18,13 @@
 
 ####Arrive roughly at dinner time
 
-Possibly go see **Kevin** after dinner
+Meet with Vero, Max, Yoojin at Vero's house
 
 ##Wednesday
 
-Go see **Max** and **Kenny** during the day
+Go see **Max**, **Kenny** and **Yoojin**  during the day to eat Blaze Pizza
 
-Then **Olivia** and **Will** at some soup place
+See 
 
 ##Thursday
 
@@ -37,3 +37,5 @@ Go Black Friday Shopping with **Rona** and **Rita** at 9 pm
 Spend morning with **Rona** and **Rita**
 
 Spend noon-time with **Caitlin** and **Tomomi**
+
+Afternoon, with **Olivia** and **Will**
