@@ -7,9 +7,6 @@
 
 alias ls='ls --color=auto'
 alias rm='rm -i'
-alias CalVisitor='wlp1s0-CalVisitor'
-alias yee='sudo netctl start CalVisitor'
-alias startlxdm='sudo systemctl start lxdm.service'
 alias open='xdg-open'
 alias ee16a='ee16a-oz@cory.eecs.berkeley.edu'
 alias ipynb='pathadd "$HOME/anaconda3/bin" && ipython notebook'
