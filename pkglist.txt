@@ -1,3 +1,6 @@
+#install by deleting this line and doing
+# pacman -S $(< pkglist.txt)
+
 adobe-source-han-sans-jp-fonts
 alsa-utils
 archey3
