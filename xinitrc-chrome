@@ -1,0 +1,2 @@
+synclient AccelFactor=0 MinSpeed=3
+synclient PalmDetect=1
