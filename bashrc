@@ -14,6 +14,11 @@ alias ipynb='pathadd "$HOME/anaconda3/bin" && ipython notebook'
 alias sql='sqlite3'
 alias pdfjoin='pdfjoin --rotateoversize false'
 alias cs61b='ssh -X cs61b-ans@ashby.cs.berkeley.edu'
+alias go='source .xinitrc'
+alias mv='mv -v'
+alias cp='cp -v'
+alias bashrc='vim ~/.bashrc'
+
 PS1='[\u@\h \W]\$ '
 # Prepend to path without duplicates
 pathadd() {
