@@ -18,6 +18,8 @@ alias go='source .xinitrc'
 alias mv='mv -v'
 alias cp='cp -v'
 alias bashrc='vim ~/.bashrc'
+alias ee16b='ssh ee16b-aff@cory.eecs.berkeley.edu'
+alias intellij='/usr/share/intellijidea-ce/bin/idea.sh'
 
 PS1='[\u@\h \W]\$ '
 # Prepend to path without duplicates
@@ -29,3 +31,7 @@ pathadd() {
 
 # Add Anaconda to path
 pathadd "$HOME/anaconda3/bin"
+
+export WORKON_HOME=~/.virtualenvs
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source /usr/bin/virtualenvwrapper.sh
