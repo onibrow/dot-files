@@ -30,8 +30,12 @@ pathadd() {
 }
 
 # Add Anaconda to path
-pathadd "$HOME/anaconda3/bin"
+#pathadd "$HOME/anaconda3/bin"
 
-export WORKON_HOME=~/.virtualenvs
-VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-source /usr/bin/virtualenvwrapper.sh
+#export WORKON_HOME=~/.virtualenvs
+#VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+#source /usr/bin/virtualenvwrapper.sh
+
+export CS61B_LIB_DIR=~/ans/javalib/*
+
+export CLASSPATH=$CLASSPATH:$CS61B_LIB_DIR:./
