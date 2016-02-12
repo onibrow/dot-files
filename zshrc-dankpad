@@ -1,3 +1,9 @@
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
+xinput disable 10
+
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
@@ -98,7 +104,7 @@ alias cs61b='ssh -X cs61b-ans@ashby.cs.berkeley.edu'
 alias go='source .xinitrc'
 alias mv='mv -v'
 alias cp='cp -v'
-alias bashrc='vim ~/.bashrc'
+alias zshrc='vim ~/.zshrc'
 alias ee16b='ssh ee16b-aff@cory.eecs.berkeley.edu'
 alias intellij='/usr/share/intellijidea-ce/bin/idea.sh'
 alias package-dawn='electron-packager ~/PiE/daemon/dawn dawn --platform=darwin --arch=x64 --version=0.36.2'
