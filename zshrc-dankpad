@@ -75,7 +75,7 @@ export CLASSPATH=$CLASSPATH:$CS61B_LIB_DIR:./
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='vim'
+  export EDITOR='mvim'
 fi
 
 # Compilation flags
@@ -98,7 +98,6 @@ alias wifi='sudo systemctl start dhcpcd@enp0s3.service'
 alias rm='mv -t /tmp'
 alias open='xdg-open'
 alias ee16a='ssh ee16a-oz@cory.eecs.berkeley.edu'
-alias ipynb='pathadd "$HOME/anaconda3/bin" && ipython notebook'
 alias sql='sqlite3'
 alias pdfjoin='pdfjoin --rotateoversize false'
 alias cs61b='ssh -X cs61b-ans@ashby.cs.berkeley.edu'
@@ -111,6 +110,7 @@ alias intellij='/usr/share/intellijidea-ce/bin/idea.sh'
 alias package-dawn='electron-packager ~/PiE/daemon/dawn dawn --platform=darwin --arch=x64 --version=0.36.2'
 alias startdawn='./dawn'
 alias cat='lolcat -a -s 500'
+alias ipynb='bash ipython notebook'
 
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
