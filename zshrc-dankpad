@@ -110,6 +110,7 @@ alias package-dawn='electron-packager ~/PiE/daemon/dawn dawn --platform=darwin -
 alias startdawn='./dawn'
 alias cat='lolcat -a -s 500'
 alias ipynb='bash ipython notebook'
+alias tmux='tmux -2'
 
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
