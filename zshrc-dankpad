@@ -12,7 +12,7 @@ ZSH=/usr/share/oh-my-zsh/
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="frisk"
+ZSH_THEME="ys"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -111,6 +111,7 @@ alias startdawn='./dawn'
 alias cat='lolcat -a -s 500'
 alias ipynb='bash ipython notebook'
 alias tmux='tmux -2'
+alias stylecheck='python ~/ans/javalib/style61b.py *.java'
 
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
