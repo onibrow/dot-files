@@ -112,6 +112,9 @@ alias cat='lolcat -a -s 500'
 alias ipynb='bash ipython notebook'
 alias tmux='tmux -2'
 alias stylecheck='python ~/ans/javalib/style61b.py *.java'
+alias logout='pkill -9 -f lxsession'
+alias fish='asciiquarium'
+alias gitlock='rm $(git rev-parse --show-toplevel)/.git/index.lock'
 
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
