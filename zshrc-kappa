@@ -92,3 +92,6 @@ alias open='xdg-open'
 alias install='sudo apt-get install'
 alias update='sudo apt-get update'
 alias kappa='screenfetch -D "Elementary"'
+alias poweroff='sudo poweroff'
+alias reboot='sudo reboot'
+
