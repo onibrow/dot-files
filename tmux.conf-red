@@ -98,7 +98,7 @@ set -g pane-active-border-fg colour196
 # The statusbar {
 
 set -g status-position bottom
-set -g status-bg colour246
+set -g status-bg colour233
 set -g status-fg colour196
 set -g status-attr dim
 set -g status-left ''
@@ -107,12 +107,13 @@ set -g status-right-length 50
 set -g status-left-length 20
 
 setw -g window-status-current-fg colour196
-setw -g window-status-current-bg colour234
+setw -g window-status-current-bg colour235
+
 setw -g window-status-current-attr bold
 setw -g window-status-current-format ' #I#[fg=colour250]:#[fg=colour255]#W#[fg=colour196]#F '
 
 setw -g window-status-fg colour138
-setw -g window-status-bg colour235
+setw -g window-status-bg colour255
 setw -g window-status-attr none
 setw -g window-status-format ' #I#[fg=colour237]:#[fg=colour254]#W#[fg=colour254]#F '
 
