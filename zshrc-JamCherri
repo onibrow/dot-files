@@ -1,5 +1,7 @@
 if [ "$TMUX" = "" ]; then tmux -2 ; fi
 
+# export EDITOR=vim
+# /usr/bin/setxkbmap -option 'ctrl:nocaps'
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200
@@ -101,3 +103,13 @@ alias cat='lolcat -as 500'
 alias gitlock='rm $(git rev-parse --show-toplevel)/.git/index.lock'
 alias fish='asciiquarium'
 alias screencap='screenfetch -c "9" -s'
+alias cherri='screenfetch -c "9"'
+
+# --------- #
+# Fun Stuff #
+# --------- #
+# lolcat
+# assiquarium
+# oneko
+# espeak
+# cowfortune
