@@ -104,6 +104,8 @@ alias gitlock='rm $(git rev-parse --show-toplevel)/.git/index.lock'
 alias fish='asciiquarium'
 alias screencap='screenfetch -c "9" -s'
 alias cherri='screenfetch -c "9"'
+alias pie='ssh pie@68.5.18.54'
+alias mic-test='arecord -vvv -f dat /dev/null'
 
 # --------- #
 # Fun Stuff #
