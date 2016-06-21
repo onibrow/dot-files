@@ -1,6 +1,6 @@
 PROMPT=$'
-%{$FG[040]%}➜ %{$reset_color%}%n@%{$FG[196]%}%m%{$reset_color%} 糖 %{$FG[227]%}%~ %{$reset_color%} $(git_prompt_info)
-%{$FG[196]%} 🔀 %{$reset_color%} '
+%{$FG[040]%} ➜ %{$reset_color%}%n@%{$FG[196]%}%m%{$reset_color%} 糖 %{$FG[227]%}%~ %{$reset_color%} $(git_prompt_info)
+%{$FG[196]%}  🔀 %{$reset_color%} '
 
 PROMPT2="%{$fg_blod[black]%}%🔀 %{$reset_color%}"
 
