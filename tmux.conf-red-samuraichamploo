@@ -100,7 +100,7 @@ set -g status-bg colour234
 set -g status-fg colour196
 set -g status-attr dim
 set -g status-left ' #[fg=colour0]•#[fg=colour124]•#[fg=colour130, bold]•#[fg=colour255, bold] ダンゴ '
-set -g status-right '#[fg=colour255,bg=colour237, bold] %d/%m #[fg=colour196]••• '
+set -g status-right '#[fg=colour255, bold] %d/%m #[fg=colour196]••• '
 set -g status-right-length 50
 set -g status-left-length 20
 
