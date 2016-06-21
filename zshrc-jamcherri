@@ -14,7 +14,7 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="aussiegeek"
+ZSH_THEME="onibrow"
 # ZSH_THEME="bira"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -104,7 +104,6 @@ alias gitlock='rm $(git rev-parse --show-toplevel)/.git/index.lock'
 alias fish='asciiquarium'
 alias screencap='screenfetch -c "9" -s'
 alias cherri='screenfetch -c "9"'
-alias pie='ssh pie@68.5.18.54'
 alias mic-test='arecord -vvv -f dat /dev/null'
 
 # --------- #
@@ -115,3 +114,7 @@ alias mic-test='arecord -vvv -f dat /dev/null'
 # oneko
 # espeak
 # cowfortune
+# speed-test
+# mic-test
+# screencap
+# cherri
