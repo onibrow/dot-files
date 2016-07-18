@@ -12,4 +12,10 @@ pkglist: yaourt -Qq >> pkglist-[computer-name].txt
 
 tmux.conf: tmux visuals
 
+vimrc: basic vim config
+
 zshrc: zsh best sh
+
+zsh theme and tmux conf were made by me adapted from other users'. Feel free to use and distribute
+
+![Desktop](screen.png)
