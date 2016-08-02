@@ -1,7 +1,7 @@
 set-window-option -g mode-keys vi
 setw -g mode-keys vi
 set -g default-terminal "screen-256color"
-set -g prefix C-a
+set -g prefix C-Space
 set -g base-index 1
 
 #set -g pane-active-border-style fg=red
@@ -93,7 +93,6 @@ set -g pane-active-border-fg colour51
 # }
 # The statusbar {
 
-set -g status-position bottom
 set -g status-bg colour234
 set -g status-fg colour137
 set -g status-attr dim
