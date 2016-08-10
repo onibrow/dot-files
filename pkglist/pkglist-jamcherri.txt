@@ -390,6 +390,7 @@ openbox-themes
 opencore-amr
 openexr
 openjpeg
+openjpeg2
 openresolv
 openssh
 openssl
@@ -528,6 +529,7 @@ thunar-volman
 tmux
 ttf-dejavu
 ttf-hanazono
+ttf-ms-fonts
 ttf-sazanami
 tumbler
 tzdata
@@ -552,6 +554,7 @@ wayland-protocols
 wget
 which
 wpa_supplicant
+wttr
 x265
 xautolock
 xcb-proto
