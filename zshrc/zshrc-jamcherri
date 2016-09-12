@@ -8,7 +8,11 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/onibrow/.oh-my-zsh
+export ZSH=/home/onibrow/.oh-my-zsh
+
+
+# Timezone
+TZ='America/Los_angeles'; export TZ
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -84,6 +88,10 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# Tmuxifier
+export PATH="$HOME/.tmuxifier/bin:$PATH"
+eval "$(tmuxifier init -)"
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -105,6 +113,11 @@ alias fish='asciiquarium'
 alias screencap='screenfetch -c "9" -s'
 alias cherri='screenfetch -c "9"'
 alias mic-test='arecord -vvv -f dat /dev/null'
+alias ipynb='jupyter notebook'
+alias speedtest='speedtest-cli'
+alias log='git log --pretty=format:"%cn %h %s" --oneline --decorate --graph'
+alias bigfont='cp -f ~/.config/xfce4/terminal/terminalrc-big ~/.config/xfce4/terminal/terminalrc'
+alias smallfont='cp -f ~/.config/xfce4/terminal/terminalrc-small ~/.config/xfce4/terminal/terminalrc'
 
 # --------- #
 # Fun Stuff #
@@ -118,3 +131,7 @@ alias mic-test='arecord -vvv -f dat /dev/null'
 # mic-test
 # screencap
 # cherri
+# baobab
+# wttr
+# fzf
+# tmuxifier
