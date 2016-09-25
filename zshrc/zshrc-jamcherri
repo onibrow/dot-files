@@ -131,7 +131,6 @@ alias smallfont='cp -f ~/.config/xfce4/terminal/terminalrc-small ~/.config/xfce4
 # mic-test
 # screencap
 # cherri
-# baobab
 # wttr
 # fzf
 # tmuxifier
