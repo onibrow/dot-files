@@ -1,0 +1,5 @@
+[user]
+	email = seiya.ono12@gmail.com
+	name = onibrow
+[alias]
+    logtree = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

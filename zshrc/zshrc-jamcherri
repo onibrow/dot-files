@@ -115,9 +115,10 @@ alias cherri='screenfetch -c "9"'
 alias mic-test='arecord -vvv -f dat /dev/null'
 alias ipynb='jupyter notebook'
 alias speedtest='speedtest-cli'
-alias log='git log --pretty=format:"%cn %h %s" --oneline --decorate --graph'
 alias bigfont='cp -f ~/.config/xfce4/terminal/terminalrc-big ~/.config/xfce4/terminal/terminalrc'
 alias smallfont='cp -f ~/.config/xfce4/terminal/terminalrc-small ~/.config/xfce4/terminal/terminalrc'
+alias mars='java -jar ~/Documents/scono12/soph/CS61C/Mars4_5.jar &'
+alias logisim='java -jar ~/Documents/scono12/soph/CS61C/logisim.jar &'
 
 # --------- #
 # Fun Stuff #
