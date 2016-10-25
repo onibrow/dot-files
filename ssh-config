@@ -7,5 +7,12 @@ Host ee16a
     HostName cory.eecs.berkeley.edu
     User ee16a-lab
 Host cs61c
-    HostName hive1.cs.berkeley.edu
+    HostName hive24.cs.berkeley.edu
     User cs61c-ann
+Host leaky
+    HostName 192.168.0.105
+    User ubuntu
+Host bbb
+    HostName 192.168.7.2
+    User ubuntu
+    IdentityFile ~/.ssh/frankfurter_seiya
