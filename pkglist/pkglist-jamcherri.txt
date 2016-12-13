@@ -30,6 +30,7 @@ cairo
 cantarell-fonts
 cdparanoia
 cifs-utils
+classic95-icons
 compositeproto
 confuse
 coreutils
@@ -51,6 +52,7 @@ diffutils
 dmxproto
 dnssec-anchors
 dotconf
+downgrade
 dri2proto
 dri3proto
 e2fsprogs
@@ -137,6 +139,7 @@ gtksourceview3
 gtkspell
 guile
 gummi
+gvim
 gzip
 harfbuzz
 harfbuzz-icu
@@ -173,6 +176,7 @@ json-glib
 jupyter
 jupyter-nbformat
 jupyter-notebook
+jupyter-widgetsnbextension
 jupyter_console
 kbd
 kbproto
@@ -219,6 +223,7 @@ libfontenc
 libftdi
 libgcrypt
 libglade
+libgme
 libgpg-error
 libgudev
 libical
@@ -259,6 +264,7 @@ libpipeline
 libplist
 libpng
 libproxy
+libpsl
 libpulse
 libraw1394
 librsvg
@@ -393,11 +399,8 @@ nspr
 nss
 numix-themes
 oneko
-openbox
-openbox-themes
 opencore-amr
 openexr
-openjpeg
 openjpeg2
 openresolv
 openssh
@@ -439,6 +442,10 @@ popt
 portaudio
 portmidi
 potrace
+powerline-common
+powerline-fonts
+powerline-vim
+powerline2
 powertop
 presentproto
 printproto
@@ -490,6 +497,7 @@ python2-gobject2
 python2-packaging
 python2-pillow
 python2-pip
+python2-powerline
 python2-pygame
 python2-pyparsing
 python2-pyserial
@@ -533,12 +541,14 @@ screenfetch
 scrnsaverproto
 scrot
 sdl
+sdl2
 sdl_image
 sdl_mixer
 sdl_ttf
 sed
 shadow
 shared-mime-info
+sl
 slang
 smbclient
 smpeg
@@ -590,11 +600,11 @@ vi
 vibrancy-colors
 vid.stab
 videoproto
-vim
 vim-jellybeans
 vim-runtime
 vte-common
 vte3
+vundle
 wavpack
 wayland
 wayland-protocols

@@ -7,7 +7,7 @@ Host ee16a
     HostName cory.eecs.berkeley.edu
     User ee16a-lab
 Host cs61c
-    HostName hive24.cs.berkeley.edu
+    HostName hive28.cs.berkeley.edu
     User cs61c-ann
 Host leaky
     HostName 192.168.0.105
