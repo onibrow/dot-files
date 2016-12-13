@@ -18,4 +18,4 @@ zshrc: zsh best sh
 
 zsh theme and tmux conf were made by me adapted from other users'. Feel free to use and distribute
 
-![Desktop](screen.png)
+![Desktop](screen2.png)
