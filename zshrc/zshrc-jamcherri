@@ -2,10 +2,10 @@ if [ "$TMUX" = "" ]; then tmux -2 ; fi
 
 # export EDITOR=vim
 # /usr/bin/setxkbmap -option 'ctrl:nocaps'
-xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
-xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2
-xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200
-xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
+#xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
+#xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2
+#xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200
+#xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/onibrow/.oh-my-zsh
@@ -18,7 +18,7 @@ TZ='America/Los_angeles'; export TZ
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="onibrow"
+ZSH_THEME="win"
 # ZSH_THEME="bira"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -101,7 +101,7 @@ eval "$(tmuxifier init -)"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias logout='xfce4-session-logout'
-alias ls='ls --color=auto'
+alias ls='ls --color=never'
 alias rm='mv -t /tmp'
 alias open='xdg-open'
 alias pdfjoin='pdfjoin --rotateocersize false'
@@ -110,8 +110,8 @@ alias cp='cp -vi'
 alias cat='lolcat'
 alias gitlock='rm $(git rev-parse --show-toplevel)/.git/index.lock'
 alias fish='asciiquarium'
-alias screencap='screenfetch -c "9" -s'
-alias cherri='screenfetch -c "9"'
+alias screencap='screenfetch -c "4" -s'
+alias MSDOS='screenfetch -c "4"'
 alias mic-test='arecord -vvv -f dat /dev/null'
 alias ipynb='jupyter notebook'
 alias speedtest='speedtest-cli'
@@ -119,6 +119,10 @@ alias bigfont='cp -f ~/.config/xfce4/terminal/terminalrc-big ~/.config/xfce4/ter
 alias smallfont='cp -f ~/.config/xfce4/terminal/terminalrc-small ~/.config/xfce4/terminal/terminalrc'
 alias mars='java -jar ~/Documents/scono12/soph/CS61C/Mars4_5.jar &'
 alias logisim='java -jar ~/Documents/scono12/soph/CS61C/logisim.jar &'
+
+cpf() { cp "$@" && goto "$_"; }
+mvf() { mv "$@" && goto "$_"; }
+goto() { [ -d "$1" ] && cd "$1" || cd "$(dirname "$1")"; }
 
 # --------- #
 # Fun Stuff #
@@ -131,7 +135,18 @@ alias logisim='java -jar ~/Documents/scono12/soph/CS61C/logisim.jar &'
 # speed-test
 # mic-test
 # screencap
-# cherri
 # wttr
 # fzf
 # tmuxifier
+# retrofe
+
+echo -ne "Windows 95 Version " 
+echo -ne | uname -r 
+
+# added by Anaconda3 4.2.0 installer
+export PATH="/home/onibrow/.anaconda3/bin:$PATH"
+
+# If desktop disappears: xfdesktop
+
+# added by travis gem
+[ -f /home/onibrow/.travis/travis.sh ] && source /home/onibrow/.travis/travis.sh
