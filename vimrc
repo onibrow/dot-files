@@ -1,8 +1,17 @@
 " Douglas Black
 " Colors {{{
 syntax enable           " enable syntax processing
-colorscheme zazen
 " }}}
+" Plug {{{
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+ Plug 'sts10/vim-pink-moon'
+
+call plug#end()
+
+" }}}
+colorscheme 1989
 " Misc {{{
 set ttyfast                     " faster redraw
 set backspace=indent,eol,start
@@ -32,6 +41,7 @@ set showmatch           " higlight matching parenthesis
 set ignorecase          " ignore case when searching
 set incsearch           " search as characters are entered
 set hlsearch            " highlight all matches
+nnoremap <silent> <C-l> :nohl<CR><C-l>
 " }}}
 " Folding {{{
 "=== folding ===
@@ -81,6 +91,7 @@ vnoremap <leader>y "+y
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 inoremap jk <esc>
+set pastetoggle=<F2>
 " }}}
 " Powerline {{{
 "set encoding=utf-8

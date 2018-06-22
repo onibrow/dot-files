@@ -2,4 +2,14 @@
 	email = seiya.ono12@gmail.com
 	name = onibrow
 [alias]
-    logtree = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    logtree = log --graph --pretty=format:'%C(bold red)%h%Creset -%C(bold cyan)%d%Creset %s %C(bold green)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    s = status
+    r = rev-parse --show-toplevel
+
+[color "status"]
+  added = green bold
+  changed = red bold
+  untracked = magenta bold
+
+[color "branch"]
+  remote = yellow
