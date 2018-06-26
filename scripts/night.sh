@@ -14,8 +14,4 @@ xfconf-query -c xfwm4 -p /general/theme -s $NIGHT_THME
 
 cp -f ~/.zshrc-night ~/.zshrc
 
-source ~/.zshrc
-source $ZSH/oh-my-zsh.sh
-source $ZSH/themes/onibrow-night.zsh-theme
-
-clear
+source ~/.oh-my-zsh/themes/onibrow-night.zsh-theme
