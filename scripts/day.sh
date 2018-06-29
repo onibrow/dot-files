@@ -13,6 +13,4 @@ xfconf-query -c xsettings -p /Gtk/CursorThemeName -s $DAY_CRSR
 
 xfconf-query -c xfwm4 -p /general/theme -s $DAY_THME
 
-cp -f ~/.zshrc-day ~/.zshrc
-
 source ~/.oh-my-zsh/themes/onibrow-day.zsh-theme

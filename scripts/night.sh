@@ -12,6 +12,4 @@ xfconf-query -c xsettings -p /Gtk/CursorThemeName -s $NIGHT_CRSR
 
 xfconf-query -c xfwm4 -p /general/theme -s $NIGHT_THME
 
-cp -f ~/.zshrc-night ~/.zshrc
-
 source ~/.oh-my-zsh/themes/onibrow-night.zsh-theme
