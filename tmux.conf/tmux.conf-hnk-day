@@ -30,7 +30,7 @@ bind-key l select-pane -R
 bind-key - split-window
 bind-key \ split-window -h
 
-bind r source-file ~/.tmux.conf \; display "Reloaded!"
+bind r source-file ~/Documents/dot-files/tmux.conf/tmux.conf-hnk-day \; display "Reloaded!"
 
 bind-key T move-window -t 1
 
