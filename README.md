@@ -24,3 +24,4 @@ zsh theme and tmux conf were made by me adapted from other users'. Feel free to 
 ![Desktop](screen2.png)
 ![Desktop](screen3.png)
 ![Desktop](screen4.png)
+![daynight](hnk-danight.gif)
