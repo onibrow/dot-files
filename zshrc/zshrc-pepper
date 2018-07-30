@@ -1,4 +1,4 @@
-if [ "$TMUX" = "" ]; then tmux -2 ; fi
+if [ "$TMUX" = "" ]; then tmux -2 -f ~/Documents/dot-files/tmux.conf/tmux.conf-hnk-night; fi
 
 export EDITOR=vim
 export TERM=xterm-256color
@@ -10,6 +10,14 @@ LS_COLORS=$LS_COLORS:'di=1;31'
 
 # Timezone
 TZ='America/Los_angeles'; export TZ
+
+# Day or Night Mode
+if [ $(date +"%H") -gt 12 ]
+then 
+    MODE=day
+else
+    MODE=night
+fi
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -34,7 +42,7 @@ HYPHEN_INSENSITIVE="true"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -89,13 +97,12 @@ fi
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
 alias ls='ls --color=auto'
 alias rm='mv -t /tmp'
 alias open='xdg-open'
 alias pdfjoin='pdfjoin --rotateocersize false'
-alias mv='mv -vi'
-alias cp='cp -vi'
+alias mv='mv -v'
+alias cp='cp -v'
 alias gitlock='rm $(git rev-parse --show-toplevel)/.git/index.lock'
 alias fish='asciiquarium'
 alias mic-test='arecord -vvv -f dat /dev/null'
@@ -120,17 +127,31 @@ mode() {
             source ~/.oh-my-zsh/oh-my-zsh.sh
             ~/Documents/dot-files/scripts/day.sh
             neofetch --config ~/Documents/dot-files/scripts/neo-day.conf
+            MODE=day
         elif [ $1 = "night" ]
         then
-            ZSH_THEME="onibrow-day"
+            ZSH_THEME="onibrow-night"
             source ~/.oh-my-zsh/oh-my-zsh.sh
             ~/Documents/dot-files/scripts/night.sh
             neofetch --config ~/Documents/dot-files/scripts/neo-night.conf
+            MODE=night
         fi
     else
         source ~/.oh-my-zsh/oh-my-zsh.sh
     fi
 }
+
+if [ $MODE = "day" ]
+then
+    ZSH_THEME="onibrow-day"
+    source ~/.oh-my-zsh/oh-my-zsh.sh
+    ~/Documents/dot-files/scripts/day.sh
+elif [ $MODE = "night" ]
+then
+    ZSH_THEME="onibrow-night"
+    source ~/.oh-my-zsh/oh-my-zsh.sh
+    ~/Documents/dot-files/scripts/night.sh
+fi
 
 cpf() { cp -r "$@" && goto "$_"; }
 mvf() { mv "$@" && goto "$_"; }
