@@ -1,4 +1,5 @@
 #!/bin/bash
+#http://www.rdeeson.com/weblog/171/changing-xfce-settings-by-script
 
 # Night Time Script
 
@@ -12,6 +13,6 @@ xfconf-query -c xsettings -p /Gtk/CursorThemeName -s $NIGHT_CRSR
 
 xfconf-query -c xfwm4 -p /general/theme -s $NIGHT_THME
 
-source ~/.oh-my-zsh/custom/themes/onibrow-night.zsh-theme
+source $ZSH_CUSTOM/themes/onibrow-night.zsh-theme
 
 if [ "$TMUX" = "" ]; then tmux -2 -f ~/Documents/dot-files/tmux.conf/tmux.conf-hnk-night ; fi

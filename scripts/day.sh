@@ -13,6 +13,6 @@ xfconf-query -c xsettings -p /Gtk/CursorThemeName -s $DAY_CRSR
 
 xfconf-query -c xfwm4 -p /general/theme -s $DAY_THME
 
-source ~/.oh-my-zsh/custom/themes/onibrow-day.zsh-theme
+source $ZSH_CUSTOM/themes/onibrow-day.zsh-theme
 
 if [ "$TMUX" = "" ]; then tmux -2 -f ~/Documents/dot-files/tmux.conf/tmux.conf-hnk-day ; fi
