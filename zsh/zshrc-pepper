@@ -4,7 +4,8 @@ export TERM=xterm-256color
 # Path to your oh-my-zsh installation.
 export ZSH=/home/onibrow/.oh-my-zsh
 
-LS_COLORS=$LS_COLORS:'di=1;31'
+LS_COLORS="di=1;32"
+
 
 # Timezone
 TZ='America/Los_angeles'; export TZ
@@ -51,7 +52,7 @@ fi
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 
-alias ls='ls --color=auto'
+#alias ls='ls --color=auto'
 alias rm='mv -t /tmp'
 alias open='xdg-open'
 alias pdfjoin='pdfjoin --rotateocersize false'

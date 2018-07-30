@@ -1,17 +1,33 @@
 " Douglas Black
 " Colors {{{
 syntax enable           " enable syntax processing
+set background=dark
 " }}}
 " Plug {{{
 call plug#begin('~/.vim/plugged')
-
 " Make sure you use single quotes
- Plug 'sts10/vim-pink-moon'
-
+Plug 'sts10/vim-pink-moon'
+Plug 'nightsense/stellarized'
+Plug 'ajmwagar/vim-deus'
 call plug#end()
 
 " }}}
-colorscheme 1989
+
+" Powerline {{{
+"
+set rtp+=/usr/lib/python3.6/site-packages
+
+" Always show statusline
+set laststatus=2
+
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+"
+" }}}
+
+set t_Co=256
+colorscheme deus
+
+execute pathogen#infect()
 " Misc {{{
 set ttyfast                     " faster redraw
 set backspace=indent,eol,start
