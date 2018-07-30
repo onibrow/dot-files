@@ -8,6 +8,7 @@ set -g default-terminal "screen-256color"
 set -g prefix C-Space
 set -g base-index 1
 set -sg escape-time 1
+set-option -g allow-rename off
 
 #set -g pane-active-border-style fg=red
 #set -g pane-active-border-style bg=default
