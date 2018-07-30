@@ -19,7 +19,7 @@ fi
 
 HYPHEN_INSENSITIVE="true"
 DISABLE_AUTO_TITLE="true"
-ZSH_CUSTOM=~/Documents/dot-files/zsh
+export ZSH_CUSTOM="/home/onibrow/Documents/dot-files/zsh"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
