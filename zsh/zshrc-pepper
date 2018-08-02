@@ -72,6 +72,7 @@ alias 16a='slack-term -config ~/.slack-term-16a'
 alias squishy='slack-term -config ~/.slack-term-squishy'
 alias pie='slack-term -config ~/.slack-term-pie'
 alias pepper='neofetch'
+alias suod='sudo'
 
 mode() {
     if [ -n $1 ]
