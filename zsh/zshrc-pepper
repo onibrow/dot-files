@@ -133,3 +133,5 @@ goto() { [ -d "$1" ] && cd "$1" || cd "$(dirname "$1")"; }
 # smartctl
 # ncmpc
 # slack-term
+# wpm
+# sxiv
