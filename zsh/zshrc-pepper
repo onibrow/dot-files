@@ -1,5 +1,7 @@
 export EDITOR=vim
 export TERM=xterm-256color
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/onibrow/.oh-my-zsh
@@ -30,7 +32,8 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH="/home/onibrow/.anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -73,6 +76,7 @@ alias squishy='slack-term -config ~/.slack-term-squishy'
 alias pie='slack-term -config ~/.slack-term-pie'
 alias pepper='neofetch'
 alias suod='sudo'
+alias xclip="xclip -selection c"
 
 mode() {
     if [ -n $1 ]
@@ -135,3 +139,4 @@ goto() { [ -d "$1" ] && cd "$1" || cd "$(dirname "$1")"; }
 # slack-term
 # wpm
 # sxiv
+# xclip
