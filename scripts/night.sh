@@ -14,4 +14,4 @@ xfconf-query -c xfwm4 -p /general/theme -s $NIGHT_THME
 
 source $ZSH_CUSTOM/themes/onibrow-night.zsh-theme
 
-if [ "$TMUX" = "" ]; then tmux -2 -f /home/onibrow/Documents/dot-files/tmux.conf/tmux.conf-hnk-night ; fi
+tmux source-file ~/Documents/dot-files/tmux.conf/tmux.conf-hnk-night

@@ -15,4 +15,4 @@ xfconf-query -c xfwm4 -p /general/theme -s $DAY_THME
 
 source $ZSH_CUSTOM/themes/onibrow-day.zsh-theme
 
-if [ "$TMUX" = "" ]; then tmux -2 -f /home/onibrow/Documents/dot-files/tmux.conf/tmux.conf-hnk-day ; fi
+tmux source-file ~/Documents/dot-files/tmux.conf/tmux.conf-hnk-day
