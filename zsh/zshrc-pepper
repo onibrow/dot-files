@@ -8,7 +8,6 @@ export ZSH=/home/onibrow/.oh-my-zsh
 
 LS_COLORS="di=1;32"
 
-
 # Timezone
 TZ='America/Los_angeles'; export TZ
 
@@ -16,8 +15,10 @@ TZ='America/Los_angeles'; export TZ
 if [ $(date +"%H") -gt 12 ]
 then 
     MODE=day
+    if [ "$TMUX" = "" ]; then tmux -f /home/onibrow/Documents/dot-files/tmux.conf/tmux.conf-hnk-day -2;  fi
 else
     MODE=night
+    if [ "$TMUX" = "" ]; then tmux -f /home/onibrow/Documents/dot-files/tmux.conf/tmux.conf-hnk-night -2; fi
 fi
 
 HYPHEN_INSENSITIVE="true"
@@ -140,3 +141,4 @@ goto() { [ -d "$1" ] && cd "$1" || cd "$(dirname "$1")"; }
 # wpm
 # sxiv
 # xclip
+# locate

@@ -31,12 +31,9 @@ bind-key l select-pane -R
 bind-key - split-window
 bind-key \ split-window -h
 
-bind r source-file ~/Documents/dot-files/tmux.conf/tmux.conf-hnk-night 
-#if-shell 'if [ $MODE = "day" ]; then true; else false; fi' 'bind r source-file ~/Documents/dot-files/tmux.conf/tmux.conf-hnk-day \; display "Day Mode!"'
-#if-shell 'if [ $MODE = "night" ]; then true; else false; fi' 'bind r source-file ~/Documents/dot-files/tmux.conf/tmux.conf-hnk-night \; display "Night Mode!"'
-
 bind-key T move-window -t 1
 
+bind-key c new-window -n '萌'
 ######################
 ### DESIGN CHANGES ###
 ######################
