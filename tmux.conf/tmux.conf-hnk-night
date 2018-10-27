@@ -89,7 +89,7 @@ setw -g mode-bg colour254
 # }
 # The panes {
 
-set -g pane-border-bg colour245
+set -g pane-border-bg colour236
 set -g pane-border-fg colour254
 set -g pane-active-border-bg colour236
 set -g pane-active-border-fg colour206
