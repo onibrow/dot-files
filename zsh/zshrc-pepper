@@ -78,6 +78,7 @@ alias pie='slack-term -config ~/.slack-term-pie'
 alias pepper='neofetch'
 alias suod='sudo'
 alias xclip="xclip -selection c"
+alias findtext="grep -rnw . -e"
 
 mode() {
     if [ -n $1 ]
