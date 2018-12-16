@@ -100,7 +100,7 @@ set -g status-position bottom
 set -g status-bg colour234
 set -g status-fg colour201
 set -g status-attr dim
-set -g status-left ' #[fg=colour069]•••#[fg=colour255, bold] ╰(*´︶`*)╯♡'
+set -g status-left ' #[fg=colour069]•••#[fg=colour255, bold] ヾ(=`ω´=)ノ”'
 set -g status-right '#[fg=colour255, bold] nyoho #[fg=colour069]••• '
 set -g status-right-length 50
 set -g status-left-length 20
