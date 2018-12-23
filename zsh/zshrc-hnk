@@ -1,5 +1,3 @@
-if [ "$TMUX" = "" ]; then tmux -f /home/onibrow/Documents/dot-files/tmux.conf/tmux.conf-meat -2;  fi
-
 export EDITOR=vim
 export TERM=xterm-256color
 export VISUAL=vim
@@ -13,7 +11,15 @@ LS_COLORS="di=1;32"
 # Timezone
 TZ='America/Los_angeles'; export TZ
 
-ZSH_THEME="onibrow-meat"
+# Day or Night Mode
+if [ $(date +"%H") -gt 12 ]
+then 
+    MODE=day
+    if [ "$TMUX" = "" ]; then tmux -f /home/onibrow/Documents/dot-files/tmux.conf/tmux.conf-hnk-day -2;  fi
+else
+    MODE=night
+    if [ "$TMUX" = "" ]; then tmux -f /home/onibrow/Documents/dot-files/tmux.conf/tmux.conf-hnk-night -2; fi
+fi
 
 HYPHEN_INSENSITIVE="true"
 DISABLE_AUTO_TITLE="true"
@@ -74,6 +80,40 @@ alias suod='sudo'
 alias xclip="xclip -selection c"
 alias findtext="grep -rnw . -e"
 
+mode() {
+    if [ -n $1 ]
+    then
+        if [ $1 = "day" ]
+        then
+            ZSH_THEME="onibrow-day"
+            source ~/.oh-my-zsh/oh-my-zsh.sh
+            ~/Documents/dot-files/scripts/day.sh
+            neofetch --config ~/Documents/dot-files/scripts/neo-day.conf
+            MODE=day
+        elif [ $1 = "night" ]
+        then
+            ZSH_THEME="onibrow-night"
+            source ~/.oh-my-zsh/oh-my-zsh.sh
+            ~/Documents/dot-files/scripts/night.sh
+            neofetch --config ~/Documents/dot-files/scripts/neo-night.conf
+            MODE=night
+        fi
+    else
+        source ~/.oh-my-zsh/oh-my-zsh.sh
+    fi
+}
+
+if [ $MODE = "day" ]
+then
+    ZSH_THEME="onibrow-day"
+    source ~/.oh-my-zsh/oh-my-zsh.sh
+    ~/Documents/dot-files/scripts/day.sh
+elif [ $MODE = "night" ]
+then
+    ZSH_THEME="onibrow-night"
+    source ~/.oh-my-zsh/oh-my-zsh.sh
+    ~/Documents/dot-files/scripts/night.sh
+fi
 
 cpf() { cp -r "$@" && goto "$_"; }
 mvf() { mv "$@" && goto "$_"; }
@@ -84,7 +124,7 @@ goto() { [ -d "$1" ] && cd "$1" || cd "$(dirname "$1")"; }
 # --------- #
 # lolcat
 # ufetch
-# asciiquarium
+# assiquarium
 # oneko
 # espeak
 # cowfortune
