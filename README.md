@@ -1,23 +1,8 @@
-# configs
+# dot files
 
-face: 96x96 icon
+All of my themes are made by myself / inspired by others. Feel free to use, distribute, or modify!
 
-gitignore: basics like python, java, and swp files
-
-font: monaco.ttf
-
-oh-my-zsh: onibrow.zsh-theme
-
-pkglist: yaourt -Qq >> pkglist-[computer-name].txt
-
-tmux.conf: tmux visuals
-
-vimrc: basic vim config
-
-zshrc: zsh best sh
-
-zsh theme and tmux conf were made by me adapted from other users'. Feel free to use and distribute
-
+Here are some of my last themes I have made - unfortunately I lost most of their respective configurations. Currently, I've settled on a very reusable setup that is easy to use.
 
 ![Desktop](screen.png)
 ![Desktop](screen1.png)
