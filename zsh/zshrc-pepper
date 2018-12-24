@@ -73,6 +73,7 @@ alias pepper='neofetch'
 alias suod='sudo'
 alias xclip="xclip -selection c"
 alias findtext="grep -rnw . -e"
+alias slice=" feh -x -g 310x227+950+450 -. ~/Pictures/meat_2.png &"
 
 
 cpf() { cp -r "$@" && goto "$_"; }
