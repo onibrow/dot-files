@@ -6,6 +6,7 @@ set background=dark
 " Plug {{{
 call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
+Plug 'dracula/vim',{'as':'dracula'}
 Plug 'sts10/vim-pink-moon'
 Plug 'nightsense/stellarized'
 Plug 'ajmwagar/vim-deus'
@@ -25,7 +26,7 @@ set laststatus=2
 " }}}
 
 set t_Co=256
-colorscheme deus
+colorscheme dracula
 
 execute pathogen#infect()
 " Misc {{{
