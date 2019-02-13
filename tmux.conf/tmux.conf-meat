@@ -29,10 +29,12 @@ bind-key j select-pane -D
 bind-key k select-pane -U
 bind-key l select-pane -R
 
-bind-key - split-window
-bind-key \ split-window -h
+bind-key - split-window -c "${pane_current_path}"
+bind-key \ split-window -h -c "${pane_current_path}"
 
 bind-key T move-window -t 1
+
+bind-key c neww -c "${pane_current_path}"
 
 ######################
 ### DESIGN CHANGES ###
@@ -125,7 +127,7 @@ setw -g window-status-bell-bg colour234
 # The messages {
 
 set -g message-attr bold
-set -g message-fg colour232
+set -g message-fg colour252
 set -g message-bg colour234
 
 # }
