@@ -106,3 +106,4 @@ goto() { [ -d "$1" ] && cd "$1" || cd "$(dirname "$1")"; }
 # sxiv
 # xclip
 # locate
+# Logic
