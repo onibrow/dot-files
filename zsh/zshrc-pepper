@@ -1,4 +1,4 @@
-if [ "$TMUX" = "" ]; then tmux -f /home/onibrow/Documents/dot-files/tmux.conf/tmux.conf-meat -2;  fi
+if [ "$TMUX" = "" ]; then tmux -f /home/onibrow/Documents/dot-files/tmux.conf/tmux.conf-rowlete -2 new-session -n "";  fi
 
 export EDITOR=vim
 export TERM=xterm-256color
@@ -15,7 +15,7 @@ LS_COLORS="di=1;32"
 # Timezone
 TZ='America/Los_angeles'; export TZ
 
-ZSH_THEME="onibrow-meat"
+ZSH_THEME="onibrow-rowlete"
 
 HYPHEN_INSENSITIVE="true"
 DISABLE_AUTO_TITLE="true"
