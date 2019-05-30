@@ -27,7 +27,7 @@ bind-key l select-pane -R
 
 bind-key - split-window -v -c "#{pane_current_path}"
 bind-key \ split-window -h -c "#{pane_current_path}"
-bind-key c neww -c "#{pane_current_path}" 
+bind-key c neww -c "#{pane_current_path}" -n ""
 
 ######################
 ### DESIGN CHANGES ###
@@ -50,9 +50,9 @@ set -g status-left-length 30
 set -g status-right-length 30
 
 setw -g window-status-current-style fg=colour255,bg=colour239,bold
-setw -g window-status-current-format '#[fg=colour001,bold] •#[fg=colour255,bold] #W '
+setw -g window-status-current-format ' #[fg=colour001,bold]•#[fg=colour255,bold] #I #W'
 setw -g window-status-style fg=colour253,bg=colour236,bold
-setw -g window-status-format ' #W '
+setw -g window-status-format ' • #I #W'
 setw -g window-status-bell-style fg=colour255,bold,bg=colour234
 setw -g renumber-windows on
 # }
