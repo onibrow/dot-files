@@ -51,15 +51,15 @@ set -g status-position bottom
 set -g status-style bg=colour234,fg=colour201,dim
 
 # STYLE SPECIFIC {
-set -g status-left ' #[fg=colour208,bold]•••#[fg=colour255,bold]'
-set -g status-right '#[fg=colour255,bold] #[fg=colour208,bold]••• '
+set -g status-left ' #[fg=colour002,bold]•••#[fg=colour255,bold]'
+set -g status-right '#[fg=colour255,bold] #[fg=colour002,bold]••• '
 # }
 set -g status-left-length 30
 set -g status-right-length 30
 
 setw -g window-status-current-style fg=colour255,bg=colour239,bold
 # STYLE SPECIFIC {
-setw -g window-status-current-format ' #[fg=colour001,bold]•#[fg=colour255,bold] #I #W'
+setw -g window-status-current-format ' #[fg=colour002,bold]•#[fg=colour255,bold] #I #W'
 # }
 setw -g window-status-style fg=colour253,bg=colour236,bold
 setw -g window-status-format ' • #I #W'

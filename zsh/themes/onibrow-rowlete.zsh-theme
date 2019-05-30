@@ -1,6 +1,6 @@
 PROMPT=$'
  %{$reset_color%}%n@%{$FG[002]%}%m%{$reset_color%} 草 %{$FG[002]%}%~ %{$reset_color%} $(git_prompt_info)
-%{$FG[004]%}  \uf06c %{$reset_color%} '
+%{$FG[002]%}  \uf06c %{$reset_color%} '
 
 GIT_CB=""
 ZSH_THEME_SCM_PROMPT_PREFIX="%{$FG[004]%}["
