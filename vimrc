@@ -1,37 +1,38 @@
-" Douglas Black
-" Colors {{{
-syntax enable           " enable syntax processing
-set background=dark
-" }}}
+execute pathogen#infect()
 " Plug {{{
+" PlugInstall
 call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 Plug 'dracula/vim',{'as':'dracula'}
 Plug 'sts10/vim-pink-moon'
 Plug 'nightsense/stellarized'
 Plug 'ajmwagar/vim-deus'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'flazz/vim-colorschemes'
 call plug#end()
 
 " }}}
-
+" Colors {{{
+syntax enable           " enable syntax processing
+set background=dark
+set t_Co=256
+" colorscheme PaperColor
+colorscheme afterglow
+let g:lightline = {
+    \ 'colorscheme': 'wombat',
+    \ }
+" }}}
 " Powerline {{{
 "
-set rtp+=/usr/lib/python3.6/site-packages
-
 " Always show statusline
 set laststatus=2
-
-" Use 256 colours (Use this setting only if your terminal supports 256 colours)
-"
 " }}}
-
-set t_Co=256
-colorscheme dracula
-
-execute pathogen#infect()
 " Misc {{{
 set ttyfast                     " faster redraw
 set backspace=indent,eol,start
+set noshowmode
 " }}}
 " Spaces & Tabs {{{
 set tabstop=4           " 4 space tab
@@ -59,6 +60,7 @@ set ignorecase          " ignore case when searching
 set incsearch           " search as characters are entered
 set hlsearch            " highlight all matches
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+map ; :Files<CR>
 " }}}
 " Folding {{{
 "=== folding ===
@@ -110,31 +112,10 @@ vmap <C-v> <Plug>(expand_region_shrink)
 inoremap jk <esc>
 set pastetoggle=<F2>
 " }}}
-" Powerline {{{
-"set encoding=utf-8
-"python from powerline.vim import setup as powerline_setup
-"python powerline_setup()
-"python del powerline_setup
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-set laststatus=2
-" }}}
-" CtrlP {{{
-let g:ctrlp_match_window = 'bottom,order:ttb'
-let g:ctrlp_switch_buffer = 0
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_custom_ignore = '\vbuild/|dist/|venv/|target/|\.(o|swp|pyc|egg)$'
-" }}}
 " NERDTree {{{
 let NERDTreeIgnore = ['\.pyc$', 'build', 'venv', 'egg', 'egg-info/', 'dist', 'docs']
-" }}}
-" Syntastic {{{
-let g:syntastic_python_flake8_args='--ignore=E501'
-let g:syntastic_ignore_files = ['.java$']
+map <C-o> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " }}}
 "" Tmux {{{
 if exists('$TMUX') " allows cursor change in tmux mode
