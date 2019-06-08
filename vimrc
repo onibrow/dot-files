@@ -54,6 +54,9 @@ set nocursorline          " highlight current line
 set wildmenu
 " set lazyredraw
 set showmatch           " higlight matching parenthesis
+nmap md :LivedownToggle<CR>
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
 " }}}
 " Searching {{{
 set ignorecase          " ignore case when searching
