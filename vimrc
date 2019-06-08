@@ -19,7 +19,7 @@ syntax enable           " enable syntax processing
 set background=dark
 set t_Co=256
 " colorscheme PaperColor
-colorscheme afterglow
+colorscheme Benokai
 let g:lightline = {
     \ 'colorscheme': 'wombat',
     \ }
