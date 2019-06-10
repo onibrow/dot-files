@@ -1,4 +1,4 @@
-if [ "$TMUX" = "" ]; then tmux -f /home/onibrow/Documents/dot-files/tmux.conf/tmux.conf-rowlete -2 new-session -n "";  fi
+if [ "$TMUX" = "" ]; then tmux -f $HOME/Documents/dot-files/tmux.conf/tmux.conf-rowlete -2 new-session -n "";  fi
 
 export EDITOR=vim
 export TERM=xterm-256color
@@ -8,7 +8,7 @@ export EDITOR="$VISUAL"
 xmodmap ~/.Xmodmap
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/onibrow/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 LS_COLORS="di=1;32"
 
@@ -19,7 +19,7 @@ ZSH_THEME="onibrow-rowlete"
 
 HYPHEN_INSENSITIVE="true"
 DISABLE_AUTO_TITLE="true"
-export ZSH_CUSTOM="/home/onibrow/Documents/dot-files/zsh"
+export ZSH_CUSTOM="$HOME/Documents/dot-files/zsh"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -29,7 +29,7 @@ plugins=(git archlinux)
 
 # User configuration
 
-export PATH="/home/onibrow/.anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/java-8-openjdk/bin:/usr"
+export PATH="$HOME/.anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/java-8-openjdk/bin:/usr"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
