@@ -1,4 +1,4 @@
-if [ "$TMUX" = "" ]; then tmux -f $HOME/Documents/dot-files/tmux.conf/tmux.conf-rowlete -2 new-session -n "";  fi
+if [ "$TMUX" = "" ]; then tmux -f $HOME/Documents/dot-files/tmux.conf/tmux.conf-purestorage -2 new-session -n "";  fi
 
 export EDITOR=vim
 export TERM=xterm-256color
