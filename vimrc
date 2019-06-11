@@ -11,6 +11,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'flazz/vim-colorschemes'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 " }}}
