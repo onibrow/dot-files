@@ -35,6 +35,9 @@ bind-key - split-window -v -c "#{pane_current_path}"
 bind-key \ split-window -h -c "#{pane_current_path}"
 bind-key c neww -c "#{pane_current_path}" -n ""
 
+bind-key S-Left swap-window -t -1
+bind-key S-Right swap-window -t +1
+
 ######################
 ### DESIGN CHANGES ###
 ######################
