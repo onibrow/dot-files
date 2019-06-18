@@ -46,7 +46,7 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-alias tmux-start=tmux -f $HOME/Documents/dot-files/tmux.conf/tmux.conf-purestorage -2 new-session -n ""
+alias tmux-start='tmux -f $HOME/Documents/dot-files/tmux.conf/tmux.conf-purestorage2 -2 new-session -n ""'
 alias ls='ls --color=auto'
 alias rm='mv -t /tmp'
 alias open='xdg-open'
