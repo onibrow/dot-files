@@ -6,10 +6,11 @@
 #SCRIPT default-assign.scr;
 #
 
+# set Interface.UseCtrlForPanning 0
 set Interface.UseCtrlForPanning 1
 
 BRD:
-Grid mydefault
+Grid mydefault;
 MENU '[bin/designlink.svg] Search and order : Run designlink-order.ulp -general;'\
      '[bin/pcb-service.svg] PCB Service : Run pcb-service.ulp;'\
 ;
@@ -35,6 +36,7 @@ Grid Default;
 
 SYM:
 Grid Default On;
+Grid Style Dots;
 Change Width 0.010in;
 
 PAC:
