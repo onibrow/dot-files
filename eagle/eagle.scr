@@ -36,7 +36,6 @@ Grid Default;
 
 SYM:
 Grid Default On;
-Grid Style Dots;
 Change Width 0.010in;
 
 PAC:
