@@ -12,6 +12,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'tpope/vim-commentary'
+Plugin 'scrooloose/nerdtree'
 call plug#end()
 
 " }}}
