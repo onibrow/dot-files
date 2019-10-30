@@ -6,8 +6,8 @@
 #SCRIPT default-assign.scr;
 #
 
-# set Interface.UseCtrlForPanning 0
-set Interface.UseCtrlForPanning 1
+set Interface.UseCtrlForPanning 0
+# set Interface.UseCtrlForPanning 1
 
 BRD:
 Grid mydefault;
