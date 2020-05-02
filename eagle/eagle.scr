@@ -1,44 +1,73 @@
-# Configuration Script
-#
-# This file can be used to configure the editor windows.
-#
-# Uncomment this if you want a set of useful default shortcuts!
-#SCRIPT default-assign.scr;
-#
+# ALL EDITORS
+ASSIGN Ctrl+BS       'SET Interface.UseCtrlForPanning 0';
+ASSIGN Shift+Ctrl+BS 'SET Interface.UseCtrlForPanning 1';
+ASSIGN Ctrl+E 'Move';
+ASSIGN Ctrl+F 'RUN find.ulp';
+# END ALL EDITORS
 
-set Interface.UseCtrlForPanning 0
-# set Interface.UseCtrlForPanning 1
 
 BRD:
-Grid mydefault;
-MENU '[bin/designlink.svg] Search and order : Run designlink-order.ulp -general;'\
-     '[bin/pcb-service.svg] PCB Service : Run pcb-service.ulp;'\
-;
-DISPLAY = 'Preset_Top' None 1 17 18 19 20 21 23 25 39 41 51;
-DISPLAY = 'Preset_Bottom' None 16 17 18 19 20 22 24 26 40 42 52;
-DISPLAY = 'Preset_Standard' None 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 39 40 41 42 51 52;
+# BOARD EDITOR
+GRID = mm_grid mm 0.25 2 on dot;
+GRID mm_grid;
+GRID alt mm 0.1;
+
+DISPLAY = 'Top' None 1 17 18 19 20 21 23 39 41 51;
+DISPLAY = 'Bottom' None 16 17 18 19 20 22 24 26 40 42 52;
+DISPLAY = 'Overview' None 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 39 40 41 42 47 49 51 52;
+DISPLAY = 'Simple' None 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26;
+DISPLAY = 'Routing' None 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 23 24 41 42 43;
+DISPLAY Simple;
+
+ASSIGN Ctrl+1 'Route 0.1mm';
+ASSIGN Ctrl+2 'Route 0.2mm';
+ASSIGN Ctrl+3 'Route 0.3mm';
+ASSIGN Ctrl+4 'Route 0.4mm';
+ASSIGN Ctrl+5 'Route 0.5mm';
+ASSIGN Ctrl+R 'Route';
+ASSIGN Ctrl+D 'Ripup';
+ASSIGN Shfit+Ctrl+D 'Ripup';
+ASSIGN Shift+Ctrl+R 'Ratsnest; Ripup @; Move';
+ASSIGN Shift+Ctrl+C 'Copy';
+ASSIGN Ctrl+I 'Info';
+ASSIGN F1 'DISPLAY Overview';
+ASSIGN F2 'DISPLAY Simple';
+ASSIGN F3 'DISPLAY Routing';
+ASSIGN F4 'DISPLAY Top';
+ASSIGN F5 'DISPLAY Bottom';
+# END BOARD EDITOR
+
 
 SCH:
+# SCHEMATIC EDITOR
 Grid Default;
-Change Width 0.006in;
-MENU '[bin/designlink.svg] Search and order {\
-                                          General : Run designlink-order.ulp -general; |\
-                                          Schematic : Run designlink-order.ulp; \
-                                          }'\
-;
+ASSIGN Ctrl+R 'net';
+ASSIGN Ctrl+D 'delete';
+# END SCHEMATIC EDITOR
+
 
 LBR:
-MENU '[bin/designlink.svg] Search and order : Run designlink-order.ulp -general;'\
-;
+# LIBRARY EDITOR
+
+# END LIBRARY EDITOR
+
 
 DEV:
+# DEVICE EDITOR
 Grid Default;
+# END DEVICE EDITOR
+
 
 SYM:
+# SYMBOL EDITOR
 Grid Default On;
-Change Width 0.010in;
+ASSIGN Ctrl+D 'delete';
+# END SYMBOL EDITOR
+
 
 PAC:
-Grid mydefault;
-Change Width 0.005in;
-Change Size 0.050in;
+# PACKAGE EDITOR
+GRID = mm_grid mm 0.25 2 on dot;
+GRID mm_grid;
+GRID alt mm 0.1;
+# END PACKAGE EDITOR
