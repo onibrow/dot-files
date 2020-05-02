@@ -65,7 +65,6 @@ set ignorecase          " ignore case when searching
 set incsearch           " search as characters are entered
 set hlsearch            " highlight all matches
 nnoremap <silent> <C-l> :nohl<CR><C-l>
-map ; :Files<CR>
 " }}}
 " Folding {{{
 "=== folding ===
