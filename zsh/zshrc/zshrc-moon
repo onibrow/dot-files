@@ -1,0 +1,117 @@
+if [ "$TMUX" = "" ]; then tmux -f /home/onibrow/Documents/dot-files/tmux.conf/tmux.conf-moon -2 new-session -n "";  fi
+
+export EDITOR=vim
+export TERM=xterm-256color
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+xmodmap ~/.Xmodmap
+
+# Path to your oh-my-zsh installation.
+export ZSH=/home/onibrow/.oh-my-zsh
+
+LS_COLORS="di=1;32"
+
+# Timezone
+TZ='America/Los_angeles'; export TZ
+
+ZSH_THEME="onibrow-moon"
+
+HYPHEN_INSENSITIVE="true"
+DISABLE_AUTO_TITLE="true"
+export ZSH_CUSTOM="/home/onibrow/Documents/dot-files/zsh"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git archlinux)
+
+# User configuration
+
+export PATH="/home/onibrow/.anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/java-8-openjdk/bin:/usr/:/var/lib/snapd/snap/bin:"
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='vim'
+fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+
+#alias ls='ls --color=auto'
+alias rm='mv -t /tmp'
+alias open='xdg-open'
+alias pdfjoin='pdfjoin --rotateocersize false'
+alias mv='mv -v'
+alias cp='cp -v'
+alias gitlock='rm $(git rev-parse --show-toplevel)/.git/index.lock'
+alias fish='asciiquarium'
+alias mic-test='arecord -vvv -f dat /dev/null'
+alias record='arecord -vvv -f dat -r 44100'
+alias ipynb='jupyter notebook'
+alias speedtest='speedtest-cli'
+alias jk='cd ..'
+alias color='/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/gawin/bash-colors-256/master/colors)"'
+alias vim='vim -X'
+alias yaoi='yaourt'
+alias pci='slack-term -config ~/.slack-term-pci'
+alias 16a='slack-term -config ~/.slack-term-16a'
+alias squishy='slack-term -config ~/.slack-term-squishy'
+alias pie='slack-term -config ~/.slack-term-pie'
+alias pepper='neofetch'
+alias suod='sudo'
+alias xclip="xclip -selection c"
+alias findtext="grep -rnw . -e"
+alias slice=" feh -x -g 310x227+950+450 -. ~/Pictures/meat_2.png &"
+alias addkey='gpg --recv-keys'
+alias mouse='xinput set-prop 12 "Device Enabled" 1'
+alias n64='/home/onibrow/Documents/m64py/src/m64py-0.2.4/m64py'
+alias rmrf='sudo rm -rf'
+alias clean_eagle="rm $(ls | grep -E '.*?\.[lbs]\#[0-9]')"
+
+
+cpf() { cp -r "$@" && goto "$_"; }
+mvf() { mv "$@" && goto "$_"; }
+goto() { [ -d "$1" ] && cd "$1" || cd "$(dirname "$1")"; }
+
+# --------- #
+# Fun Stuff #
+# --------- #
+# lolcat
+# ufetch
+# asciiquarium
+# oneko
+# espeak
+# cowfortune
+# speed-test
+# mic-test
+# screencap
+# cherri
+# wttr
+# fzf
+# amixer sset 'Master' 50% to fix speakers
+# tlp & tlp-stat
+# smartctl
+# ncmpc
+# slack-term
+# wpm
+# sxiv
+# xclip
+# locate
+# Logic
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
