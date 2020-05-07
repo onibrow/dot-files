@@ -1,5 +1,3 @@
-if [ "$TMUX" = "" ]; then tmux -f /home/onibrow/Documents/dot-files/tmux.conf/tmux.conf-moon -2 new-session -n "";  fi
-
 export EDITOR=vim
 export TERM=xterm-256color
 export VISUAL=vim

@@ -1,2 +1,3 @@
-SYS_THEME='moon'
+export SYS_THEME='moon'
+export SYS_THEME_COLOR='014'
 source /home/$USER/Documents/dot-files/zsh/zshrc/zshrc-core
