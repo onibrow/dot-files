@@ -84,7 +84,7 @@ alias mouse='xinput set-prop 12 "Device Enabled" 1'
 alias n64='/home/onibrow/Documents/m64py/src/m64py-0.2.4/m64py'
 alias rmrf='sudo rm -rf'
 alias clean_eagle="rm $(ls | grep -E '.*?\.[lbs]\#[0-9]')"
-alias diff='colordiff'
+alias cdiff='colordiff'
 
 cpf() { cp -r "$@" && goto "$_"; }
 mvf() { mv "$@" && goto "$_"; }
