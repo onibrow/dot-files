@@ -12,8 +12,7 @@ xmodmap ~/.Xmodmap
 # Path to your oh-my-zsh installation.
 export ZSH=/home/$USER/.oh-my-zsh
 export ZSH_CUSTOM=/home/$USER/Documents/dot-files/zsh
-
-LS_COLORS="di=1;32"
+export LS_COLORS=$LS_COLORS:"di=1;34"
 
 # Timezone
 TZ='America/Los_angeles'; export TZ
