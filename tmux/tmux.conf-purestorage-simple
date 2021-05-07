@@ -10,6 +10,9 @@
 
 # Install with Prefix+I
 # Update with Prefix+U
+# Comment out as needed
+# Comment out very last line of file with tpm
+#   if tpm is not installed
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @resurrect-strategy-vim 'session'
 set -g @plugin 'tmux-plugins/tmux-continuum'
