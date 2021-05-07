@@ -30,7 +30,6 @@ set -sg escape-time 1
 set-option -g allow-rename off
 set-option -g automatic-rename off
 set-option -g display-time 1500
-bind r source-file ~/.tmux.conf \; display "Reloaded!"
 
 # Enable Mouse Mode
 # set -g mouse on
@@ -52,8 +51,12 @@ bind-key - split-window -v -c "#{pane_current_path}"
 bind-key \ split-window -h -c "#{pane_current_path}"
 bind-key c neww -c "#{pane_current_path}" -n ""
 
-bind-key S-Left swap-window -t -1
-bind-key S-Right swap-window -t +1
+bind-key S-h swap-window -t -1
+bind-key S-l swap-window -t +1
+
+bind-key C-n new-session -n ""
+
+bind r source-file ~/.tmux.conf \; display "Reloaded!"
 
 ######################
 ### DESIGN CHANGES ###
