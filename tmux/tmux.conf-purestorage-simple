@@ -5,7 +5,10 @@
 # Plugins
 # -------
 
+# Install with Prefix+I
+# Update with Prefix+U
 set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @resurrect-strategy-vim 'session'
 set -g @plugin 'tmux-plugins/tmux-continuum'
 
 # -------
@@ -22,7 +25,6 @@ set-option -g allow-rename off
 set-option -g automatic-rename off
 set-option -g display-time 1500
 # STYLE SPECIFIC {
-#bind r source-file ~/Documents/dot-files/tmux/tmux.conf-purestorage-simple \; display "Reloaded!"
 bind r source-file ~/.tmux.conf \; display "Reloaded!"
 # }
 
@@ -95,7 +97,7 @@ set-option -g bell-action none
 # }
 
 # The modes {
-setw -g clock-mode-colour colour135
+setw -g clock-mode-colour colour232
 setw -g mode-style fg=colour245,bold,bg=colour254,bold
 # }
 
