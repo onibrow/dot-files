@@ -1,3 +1,4 @@
-export SYS_THEME='moon'
-export SYS_THEME_COLOR='014'
-source /home/$USER/Documents/dot-files/zsh/zshrc/zshrc-core
+export SYS_THEME='purestorage-simple'
+export SYS_THEME_COLOR='038'
+
+source /home/$USER/Documents/dot-files/zsh/zshrc/zshrc-core-ubuntu
