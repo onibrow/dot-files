@@ -73,6 +73,8 @@ alias rmrf='sudo rm -rf'
 alias findtext="grep -rnw . -ie"
 alias listssh="ps -AF | grep ssh"
 
+# sed -n "s/^.*Port WWN\s*\:\s*\(\S*\).*$/\1/p" <- how to print a group
+
 dirs() { for i in $(ls); do echo $i; ls $i | wc -l ; done }
 cpf() { cp -r "$@" && goto "$_"; }
 mvf() { mv "$@" && goto "$_"; }
