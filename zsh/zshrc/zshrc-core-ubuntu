@@ -11,8 +11,7 @@ LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:c
 export LS_COLORS
 
 # Timezone
-TZ='America/Los_angeles'; export TZ
-
+TZ='America/Los_Angeles'; export TZ
 
 # ZSH_THEME=$SYS_THEME
 ZSH_THEME=purestorage-simple
@@ -46,6 +45,8 @@ else
   export EDITOR='vim'
 fi
 
+# Add pure_tools to PYTHONPATH
+export PYTHONPATH=$PYTHONPATH:$HOME/python2_src/
 
 # set SSH_AUTH_SOCK env var to a fixed value
 export SSH_AUTH_SOCK=~/.ssh/ssh-agent.sock
@@ -70,8 +71,9 @@ alias jk='cd ..'
 alias color='/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/gawin/bash-colors-256/master/colors)"'
 alias vim='vim -X'
 alias rmrf='sudo rm -rf'
-alias findtext="grep -rnw . -ie"
+alias findtext="grep -Irnw . -ie"
 alias listssh="ps -AF | grep ssh"
+alias diff='diff -wB --color'
 
 # sed -n "s/^.*Port WWN\s*\:\s*\(\S*\).*$/\1/p" <- how to print a group
 
