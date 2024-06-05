@@ -106,6 +106,7 @@ xnoremap il :<c-u>call <SID>NextTextObject('i', 'F')<cr>
 
 nnoremap <C-l> :bnext<CR>
 nnoremap <C-h> :bprev<CR>
+nnoremap <BS> :bprev<CR>
 
 inoremap jk <esc>
 set pastetoggle=<F2>

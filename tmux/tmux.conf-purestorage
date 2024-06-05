@@ -25,11 +25,15 @@ set-window-option -g mode-keys vi
 setw -g mode-keys vi
 set -g default-terminal "screen-256color"
 set -g prefix C-Space
+#set -g prefix C-M
 set -g base-index 1
 set -sg escape-time 1
 set-option -g allow-rename off
 set-option -g automatic-rename off
 set-option -g display-time 1500
+set-option -g default-terminal "xterm-265color"
+set -g terminal-overrides "xterm-256color:kLFT5=\eOD:kRIT5=\eOC:kUP5=\eOA:kDN5=\eOB:smkx@:rmkx@"
+set -g terminal-overrides "xterm*:kLFT5=\eOD:kRIT5=\eOC:kUP5=\eOA:kDN5=\eOB:smkx@:rmkx@"
 
 # Enable Mouse Mode
 # set -g mouse on
@@ -51,8 +55,8 @@ bind-key - split-window -v -c "#{pane_current_path}"
 bind-key \ split-window -h -c "#{pane_current_path}"
 bind-key c neww -a -c "#{pane_current_path}" -n ""
 
-bind-key S-Left  swap-window -t -1
-bind-key S-Right swap-window -t +1
+bind-key H  swap-window -t -1
+bind-key L swap-window -t +1
 
 bind-key C-n new-session -n ""
 
