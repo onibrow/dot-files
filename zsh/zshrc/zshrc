@@ -1,4 +1,35 @@
 export SYS_THEME='purestorage-simple'
 export SYS_THEME_COLOR='038'
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.9
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
 
+function pretty_csv {
+    column -t -s, -n "$@" | less -F -S -X -K
+}
+
+alias diff='diff -w -B'
+
+# kill $(ps aux | grep "individual_drives" | awk '{print $2}')
+umask 002
+export TZ=America/Los_Angeles
+if [[ -r /usr/share/powerline/bindings/zsh/powerline.zsh ]]; then
+    source /usr/share/powerline/bindings/zsh/powerline.zsh
+fi
+
+[ -z "$PS1" ] && return 0
+
+# Predictable SSH authentication socket location.
+# Nest the socket in a subfolder under /tmp
+# to work around docker bind mount error when pb creates the container
+
+SOCK_DIR="/tmp/ssh-agent"
+SOCK="$SOCK_DIR/$USER"
+if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]
+then
+    mkdir -p $SOCK_DIR
+    ln -sf $SSH_AUTH_SOCK $SOCK
+    export SSH_AUTH_SOCK=$SOCK
+fi
 source /home/$USER/Documents/dot-files/zsh/zshrc/zshrc-core-ubuntu
+if [[ $(ssh-add -l) == *"keymaster-ed25519"* ]]; then ; else; purelogin; fi
