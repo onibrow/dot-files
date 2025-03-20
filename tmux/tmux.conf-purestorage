@@ -42,6 +42,7 @@ set -g terminal-overrides "xterm*:kLFT5=\eOD:kRIT5=\eOC:kUP5=\eOA:kDN5=\eOB:smkx
 # Key Binds
 # ---------
 bind-key -r C-h resize-pane -L 3 
+bind-key -r C-Backspace resize-pane -L 3 
 bind-key -r C-j resize-pane -D 3
 bind-key -r C-k resize-pane -U 3
 bind-key -r C-l resize-pane -R 3

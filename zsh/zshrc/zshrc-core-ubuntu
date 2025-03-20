@@ -81,6 +81,7 @@ dirs() { for i in $(ls); do echo $i; ls $i | wc -l ; done }
 cpf() { cp -r "$@" && goto "$_"; }
 mvf() { mv "$@" && goto "$_"; }
 goto() { [ -d "$1" ] && cd "$1" || cd "$(dirname "$1")"; }
+json() { jq '.' "$1" | less; }
 
 # --------- #
 # Fun Stuff #
